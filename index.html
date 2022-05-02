@@ -1,0 +1,48 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="medios/monitor_icono.ico">
+</head>
+<body id="cuerpo">
+    
+    <!--Div DPI-->
+    <div id="dpi" style="height: 1in; width: 1in; left: 100%; position: fixed; top: 100%; visibility: hidden;"></div>
+    <!--Div DPI-->
+    
+    <!--Bgimage simulación-->
+    <div id="contenedor">
+        <div id="caja">
+            <div id="bg"></div>
+        </div>
+    </div>
+    <!--Bgimage simulación-->
+    
+    <!--Submenú-->
+    <nav id="menu"> 
+      <label id="touch" onclick="openMenu()"><span id="cabeza"><img src="medios/monitor_logo.png" style="width: 30px;"></span></label>             
+      <form id="slide">
+        <input id="pulgadaSimulacion" type="text" name="pulgadaSimulacion" placeholder="Añade pulgadas" title="Introduce la información en el formato correcto">
+        <input type="button" value="Enviar" onclick="screenReady()"> 
+      </form>
+    </nav>
+    <!--Submenú-->
+    
+    <!--Menú principal-->
+    <div id="fullScreen">
+        <div id ="inicio">
+        <img src="medios/monitor_logo.png" style="width: 120px;">
+        <h1 style="font-family: 'Share Tech', sans-serif;">Re.<span id="title">Sizer</span></h1>
+            <p>Introduce las <strong>pulgadas diagonales</strong><br>de tu dispositivo actual</p>
+        <input id="pulgadaInicial" type="text" name="pulgadaInicial" placeholder="Pulgada de tu dispositivo">
+        <button id="open" onclick="openFullscreen();">Comenzar</button>
+        </div>
+    </div>
+    <!--Menú principal-->
+</body>
+<script src="script.js"></script>
+</html>
+
+
+

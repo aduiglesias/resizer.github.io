@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech&display=swap');
+
+#cuerpo {
+    background-color : #ededed; 
+    font-family : "Calibri", sans-serif;
+    overflow-y: hidden; 
+    overflow-x: hidden;
+    margin: 0px;
+    padding: 0px;
+}
+
+#contenedor{
+    position: absolute;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    width: 100vw; 
+    height: 100vh;
+    visibility: hidden;
+}
+
+#caja{
+    width: 0px; 
+    height: 0px; 
+    overflow: hidden;
+}
+
+#bg {
+  background-image: url("medios/sample.jpg");
+  height: 100%; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#inicio{
+    display: block;
+    width: 300px;
+    
+}
+
+#inicio img,h1,button{
+    padding-bottom: 0px;
+    margin-top: 15px;
+    
+}
+#title{
+    color: white;
+    background: black;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 10px 10px 10px 10px;
+    margin-left: 4px;
+    
+    
+}
+input{
+    border: 1px solid #DBE1EB;
+  font-size: 18px;
+  font-family: Arial, Verdana;
+  padding-left: 7px;
+  padding-right: 7px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -o-border-radius: 4px;
+  background: #FFFFFF;
+  background: linear-gradient(left, #FFFFFF, #F7F9FA);
+  background: -moz-linear-gradient(left, #FFFFFF, #F7F9FA);
+  background: -webkit-linear-gradient(left, #FFFFFF, #F7F9FA);
+  background: -o-linear-gradient(left, #FFFFFF, #F7F9FA);
+  color: #2E3133;
+    text-align: center;
+}
+
+input:focus{
+  color: #2E3133;
+  border-color: #FBFFAD;
+}
+
+#open{
+    padding-left: 45px;
+    padding-right: 45px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 20px;
+    color: white;
+    border-radius: 20px 20px 20px 20px;
+    border-color:transparent;
+    background : black;
+    transition-duration: 0.2s;
+}
+
+#open:hover{
+    color: black;
+    background: white;
+    border: 2px solid black;
+}
+
+#fullScreen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 75vh;
+  position: relative;
+  
+    
+}
+
+#menu {
+  width : 240px; 
+  background: #d9d9d9;
+  margin : 0px auto; 
+  text-align: center;
+  border-radius: 0px 0px 20px 20px;
+  visibility: hidden;
+  position: relative;
+  
+  
+
+}
+
+#cabeza {
+  padding : 18px;
+  background : white; 
+  color : black;
+  font-size : 20px;
+  cursor : pointer;
+  display: block;
+  border-radius: 0px 0px 20px 20px;
+}
+
+#slide {
+  clear:both;
+  width:100%;
+  height:0px;
+  overflow: hidden;
+  text-align: center;
+  border-radius: 0px 0px 20px 20px;
+  transition: height .4s ease;
+}
+
+#slide input {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 15px;
+    padding : 5px;
+    width: 85%;
+    
+}
+
